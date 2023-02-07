@@ -41,5 +41,13 @@ class Exam_Center(models.Model):
 class Bacche(Exam_Center):
     name=models.CharField(max_length=20)
     roll=models.IntegerField()
-    
+
+#proxy models inheritance concept
+class A(models.Model):
+    name=models.CharField()
+    roll=models.IntegerField()
+class B(A):
+    class Meta:
+        #but ther is no proxy table
+        proxy=True
 
