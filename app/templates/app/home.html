@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>retriving data from admin panel</title>
+</head>
+<body>
+    <h2>hey you are retriving data from the admin panel</h2>
+    
+    {% for student in student_data %}
+        <hr>
+        {{student.id}} <br>
+        {{student.name}} <br>
+        {{student.age}} <br>
+        {{student.fees}} <br>
+        <hr>
+    {% endfor %}
+    <hr>
+    {% for teacher in teacher_data %}
+        <hr>
+        {{teacher.id}} <br>
+        {{teacher.name}} <br>
+        {{teacher.age}} <br>
+        {{teacher.salary}} <br>
+        {{teacher.date}} <br>
+        <hr>
+    {% endfor %}
+    <hr>
+    {% for contractor in contractor_data %}
+        <hr>
+        {{contractor.id}} <br>
+        {{contractor.name}} <br>
+        {{contractor.age}} <br>
+        {{contractor.payment}} <br>
+        {{contractor.date}} <br>
+        <hr>
+    {% endfor %}
+        
+</body>
+</html>
