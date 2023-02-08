@@ -1,4 +1,5 @@
 from django.db import models
+from .managers import Custome_Manager
 
 # Create your models here.
 #here we are going to see the concept of the 
@@ -52,4 +53,8 @@ class B(A):
         proxy=True
 
 #lets make ours own custom manager
+class ZaidKhan(models.Model):
+    name=models.CharField(max_length=30)
+    roll=models.IntegerField()
+students=Custome_Manager()
 
