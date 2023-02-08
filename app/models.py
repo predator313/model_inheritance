@@ -51,3 +51,5 @@ class B(A):
         #but ther is no proxy table
         proxy=True
 
+#lets make ours own custom manager
+
